@@ -1,37 +1,112 @@
+<!-- ABOUT -->
 <section class="py-32 px-6">
-  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-    <!-- FOTO -->
-    <div class="flex justify-center md:justify-start">
-      <img
-        src="assets/profile.jpg"
-        alt="Foto profilo"
-        class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border border-neutral-200 shadow-sm hover:scale-[1.02] transition duration-300"
-      />
+  <div class="max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
+
+      <!-- FOTO -->
+      <div class="flex justify-center md:justify-start">
+        <img
+          src="assets/profile.jpg"
+          alt="Foto profilo"
+          class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border border-neutral-200 shadow-sm"
+        />
+      </div>
+
+      <!-- TESTO -->
+      <div class="space-y-6 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
+          About me
+        </h2>
+
+        <p class="text-neutral-400 text-sm">
+          Frontend Developer · Angular · UI focused
+        </p>
+
+        <p class="text-neutral-500 leading-relaxed text-base md:text-lg">
+          Lavoro principalmente con Angular e mi piace costruire UI semplici,
+          veloci e ben strutturate.
+        </p>
+      </div>
+
     </div>
+  </div>
+</section>
 
-    <!-- TESTO -->
-    <div class="space-y-6 text-center md:text-left">
-      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
-        About me
-      </h2>
+<!-- CV -->
+<section class="py-24 px-6">
+  <div class="max-w-5xl mx-auto">
 
-      <p class="text-neutral-500 leading-relaxed text-base md:text-lg">
-        Lavoro principalmente con Angular e mi piace costruire UI semplici,
-        veloci e ben strutturate.
-      </p>
+    <div class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
 
-      <!-- SEPARATORE -->
-      <div class="my-6 h-px bg-neutral-200"></div>
+      <!-- TESTO -->
+      <div class="space-y-5">
+        <h3 class="text-xs uppercase tracking-widest text-neutral-400">
+          Curriculum
+        </h3>
 
-      <!-- CV -->
-      <a
-        href="assets/cv.pdf"
-        target="_blank"
-        class="inline-flex items-center text-sm text-neutral-600 hover:text-black transition group"
-      >
-        Scarica CV
-        <span class="ml-1 group-hover:translate-x-1 transition">→</span>
-      </a>
+        <h2 class="text-2xl font-semibold tracking-tight">
+          Il mio CV
+        </h2>
+
+        <p class="text-neutral-500 leading-relaxed">
+          Un riassunto del mio percorso, competenze e progetti principali.
+        </p>
+
+        <a
+          href="assets/cv.pdf"
+          target="_blank"
+          class="inline-flex items-center gap-2 px-5 py-2 border border-neutral-300 rounded-full text-sm text-neutral-700 hover:bg-black hover:text-white transition"
+        >
+          Scarica CV ↓
+        </a>
+      </div>
+
+      <!-- PREVIEW -->
+      <div class="flex justify-center md:justify-end">
+        <div class="w-64 h-80 border border-neutral-200 rounded-xl overflow-hidden shadow-sm">
+          <img
+            src="assets/cv-preview.png"
+            alt="Anteprima CV"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section class="py-20 px-6">
+  <div class="max-w-5xl mx-auto">
+
+    <div class="rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
+
+      <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-400 text-center mb-6">
+        Tecnologie
+      </h3>
+
+      <div class="relative overflow-hidden">
+
+        <!-- FADE LEFT -->
+        <div class="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+
+        <!-- FADE RIGHT -->
+        <div class="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+
+        <!-- SCROLL -->
+        <div class="flex gap-10 items-center whitespace-nowrap animate-[scroll_25s_linear_infinite]">
+
+          <ng-container *ngFor="let _ of [1, 2]">
+            <div *ngFor="let tech of techStack" class="flex items-center gap-2 text-neutral-600">
+              <img [src]="tech.icon" class="w-8 h-8" />
+              <span class="text-sm">{{ tech.name }}</span>
+            </div>
+          </ng-container>
+
+        </div>
+
+      </div>
     </div>
   </div>
 </section>

@@ -11,3 +11,12 @@ body {
   background: white;
   color: #111;
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
