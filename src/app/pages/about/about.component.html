@@ -1,1 +1,37 @@
-<p>about works!</p>
+<section class="py-32 px-6">
+  <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <!-- FOTO -->
+    <div class="flex justify-center md:justify-start">
+      <img
+        src="assets/profile.jpg"
+        alt="Foto profilo"
+        class="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl border border-neutral-200 shadow-sm hover:scale-[1.02] transition duration-300"
+      />
+    </div>
+
+    <!-- TESTO -->
+    <div class="space-y-6 text-center md:text-left">
+      <h2 class="text-3xl md:text-4xl font-semibold tracking-tight">
+        About me
+      </h2>
+
+      <p class="text-neutral-500 leading-relaxed text-base md:text-lg">
+        Lavoro principalmente con Angular e mi piace costruire UI semplici,
+        veloci e ben strutturate.
+      </p>
+
+      <!-- SEPARATORE -->
+      <div class="my-6 h-px bg-neutral-200"></div>
+
+      <!-- CV -->
+      <a
+        href="assets/cv.pdf"
+        target="_blank"
+        class="inline-flex items-center text-sm text-neutral-600 hover:text-black transition group"
+      >
+        Scarica CV
+        <span class="ml-1 group-hover:translate-x-1 transition">→</span>
+      </a>
+    </div>
+  </div>
+</section>
