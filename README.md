@@ -4,7 +4,7 @@ Portfolio personale sviluppato con Angular per presentare i miei progetti, compe
 
 ## Sito Live
 
-👉 [Visualizza il sito](https://portfolio-basil-elsiad.vercel.app)
+👉 [Visualizza il sito](https://portfolio-basil-elsaid.vercel.app)
 
 ---
 
