@@ -1,8 +1,9 @@
 <!-- ABOUT -->
 <section class="py-32 px-6">
   <div class="max-w-5xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
-
+    <div
+      class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm"
+    >
       <!-- FOTO -->
       <div class="flex justify-center md:justify-start">
         <img
@@ -19,15 +20,23 @@
         </h2>
 
         <p class="text-neutral-400 text-sm">
-          Frontend Developer · Angular · UI focused
+          BSc Computer Science . Junior Developer
         </p>
 
         <p class="text-neutral-500 leading-relaxed text-base md:text-lg">
-          Lavoro principalmente con Angular e mi piace costruire UI semplici,
-          veloci e ben strutturate.
+          Sono un neolaureato in Informatica con un forte interesse per lo
+          sviluppo backend e la progettazione di sistemi software. Mi piace
+          lavorare su logica, architettura e API, costruendo applicazioni
+          robuste e scalabili.
         </p>
-      </div>
 
+        <p class="text-neutral-500 leading-relaxed text-base md:text-lg">
+          Ho esperienza nello sviluppo di API REST sia con Java e Spring Boot
+          che con NestJS. Utilizzo anche Angular quando serve realizzare
+          interfacce per consumare i servizi backend.
+        </p>
+
+      </div>
     </div>
   </div>
 </section>
@@ -35,18 +44,16 @@
 <!-- CV -->
 <section class="py-24 px-6">
   <div class="max-w-5xl mx-auto">
-
-    <div class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
-
+    <div
+      class="grid md:grid-cols-2 gap-12 items-center rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm"
+    >
       <!-- TESTO -->
       <div class="space-y-5">
         <h3 class="text-xs uppercase tracking-widest text-neutral-400">
           Curriculum
         </h3>
 
-        <h2 class="text-2xl font-semibold tracking-tight">
-          Il mio CV
-        </h2>
+        <h2 class="text-2xl font-semibold tracking-tight">Il mio CV</h2>
 
         <p class="text-neutral-500 leading-relaxed">
           Un riassunto del mio percorso, competenze e progetti principali.
@@ -63,7 +70,9 @@
 
       <!-- PREVIEW -->
       <div class="flex justify-center md:justify-end">
-        <div class="w-64 h-80 border border-neutral-200 rounded-xl overflow-hidden shadow-sm">
+        <div
+          class="w-64 h-80 border border-neutral-200 rounded-xl overflow-hidden shadow-sm"
+        >
           <img
             src="assets/cv-preview.png"
             alt="Anteprima CV"
@@ -71,7 +80,6 @@
           />
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -79,33 +87,38 @@
 <!-- TECH STACK -->
 <section class="py-20 px-6">
   <div class="max-w-5xl mx-auto">
-
     <div class="rounded-3xl border border-neutral-200 bg-white p-10 shadow-sm">
-
-      <h3 class="text-xs uppercase tracking-[0.2em] text-neutral-400 text-center mb-6">
+      <h3
+        class="text-xs uppercase tracking-[0.2em] text-neutral-400 text-center mb-6"
+      >
         Tecnologie
       </h3>
 
       <div class="relative overflow-hidden">
-
         <!-- FADE LEFT -->
-        <div class="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"></div>
+        <div
+          class="absolute left-0 top-0 h-full w-20 bg-gradient-to-r from-white to-transparent z-10"
+        ></div>
 
         <!-- FADE RIGHT -->
-        <div class="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"></div>
+        <div
+          class="absolute right-0 top-0 h-full w-20 bg-gradient-to-l from-white to-transparent z-10"
+        ></div>
 
         <!-- SCROLL -->
-        <div class="flex gap-10 items-center whitespace-nowrap animate-[scroll_25s_linear_infinite]">
-
+        <div
+          class="flex gap-10 items-center whitespace-nowrap animate-[scroll_25s_linear_infinite]"
+        >
           <ng-container *ngFor="let _ of [1, 2]">
-            <div *ngFor="let tech of techStack" class="flex items-center gap-2 text-neutral-600">
+            <div
+              *ngFor="let tech of techStack"
+              class="flex items-center gap-2 text-neutral-600"
+            >
               <img [src]="tech.icon" class="w-8 h-8" />
               <span class="text-sm">{{ tech.name }}</span>
             </div>
           </ng-container>
-
         </div>
-
       </div>
     </div>
   </div>
