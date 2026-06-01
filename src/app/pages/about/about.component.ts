@@ -1,9 +1,9 @@
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about',
-  imports: [NgFor],
+  imports: [NgFor, NgIf],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
@@ -20,4 +20,15 @@ export class AboutComponent {
     { name: 'MySQL', icon: 'assets/icons/mysql.svg' },
     { name: 'MongoDB', icon: 'assets/icons/mongodb.svg' },
   ];
+
+  isDesktop = true;
+
+  ngOnInit() {
+    this.checkScreen();
+    window.addEventListener('resize', () => this.checkScreen());
+  }
+
+  checkScreen() {
+    this.isDesktop = window.innerWidth >= 768;
+  }
 }
