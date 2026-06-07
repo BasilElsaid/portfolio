@@ -10,4 +10,11 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 })
 export class NavbarComponent {
   menuOpen = false;
+
+  scrollToFooter() {
+    const el = document.getElementById('footer');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
 }
