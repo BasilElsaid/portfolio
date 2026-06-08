@@ -11,8 +11,8 @@ export class HomeComponent {
   typedText = '';
 
   private fullText =
-    'Junior Backend-oriented developer focalizzato su API REST, architettura software e applicazioni web moderne.';
-
+    'Software developer che progetta e realizza applicazioni web complete, tra frontend e backend, con attenzione a struttura, logica e qualità del codice.';
+    
   private index = 0;
 
   ngOnInit() {
